@@ -1,3 +1,4 @@
 module.exports = {
-  publicPath: "/task-tracker-vue/",
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/task-tracker-vue/" : "/",
 };
